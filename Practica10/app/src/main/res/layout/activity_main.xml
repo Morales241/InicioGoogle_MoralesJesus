@@ -1,19 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="morales.jesus.practica10.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Iniciar sesión"
+        android:textSize="28sp"
+        android:layout_gravity="center"
+        android:textColor="@color/Azul"
+        android:layout_marginBottom="32dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:src="@drawable/perfil"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo electrónico"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/Azul"
+        android:textColorHint="@color/Gris"
+        android:textColor="@color/AzulOscuro"
+        android:layout_marginBottom="16dp"
+        android:importantForAccessibility="no"/>
+
+    <EditText
+        android:id="@+id/etContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/Azul"
+        android:textColorHint="@color/Gris"
+        android:textColor="@color/AzulOscuro"
+        android:layout_marginBottom="32dp"
+        android:importantForAccessibility="no"/>
+
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión"
+        android:backgroundTint="@color/Azul"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnRegistrarse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrarse"
+        android:backgroundTint="@color/AzulOscuro"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión con Google"
+        android:backgroundTint="@color/AzulBajo"
+        android:textColor="@color/AzulOscuro" />
+
+</LinearLayout>
